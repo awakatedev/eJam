@@ -1,0 +1,31 @@
+.loader div {
+    animation-duration: 0.5s;
+  }
+  
+  .loader div:first-child {
+    animation-delay: 0.1s;
+  }
+  
+  .loader div:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .loader div:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #252F3D;
+    border-radius: 40px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+    border-radius: 40px;
+  }
+  .blur-text {
+    filter: blur(4px);
+    user-select: none;
+  }
