@@ -2,6 +2,10 @@
 
 import Image from "next/image";
 import Warning from "../../../../public/img/image 6.png";
+import {
+  ArrowRightIcon, LockClosedIcon
+} from "@heroicons/react/24/outline";
+
 
 const ProductSubmitSection = () => {
   return (
@@ -11,12 +15,16 @@ const ProductSubmitSection = () => {
           className="w-full h-20 p-5 flex items-center justify-center rounded-full bg-Green text-center text-Base text-xl font-semibold"
           href="https://awakate-portfolio.vercel.app"
         >
-          Yes - Claim my discount
+          YES - CLAIM MY DISCOUNT{" "}
+          <ArrowRightIcon className="h-8 w-8 text-Base font-bold md:ml-5 ml-2" />
         </a>
         <div className="w-full p-3 border border-slate-300 border-2 rounded-lg my-3">
-          <div className="w-full p-3 flex justify-between  border-b border-slate-300 text-center text-Text text-base font-regular text-lg  ">
+          <div className="w-full p-3 flex justify-between  md:border-b md:border-slate-300 text-center text-Text text-base font-regular md:text-lg text-sm ">
             <span>Free shipping</span>
-            <span>Secure 256-bit SSL encryption</span>
+            <span className="flex items-center ">
+              <LockClosedIcon className="h-5 w-5 text-Text font-bold md:mr-2" />
+              Secure 256-bit SSL encryption
+            </span>
           </div>
         </div>
         <div>

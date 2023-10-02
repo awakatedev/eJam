@@ -1,20 +1,6 @@
-# cluwall-audit-front
+# eJamtest
 
-This project is a front-end application for the Cluwall smart contract audit tool. The application is built using [Next.js](https://nextjs.org/), a popular framework for building server-side rendered React applications, and other dependencies such as [React](https://reactjs.org/), [TailwindCSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/).
-
-## Features
-
-- User interface for uploading and auditing smart contracts
-- Dynamic display of audit results with interactive data visualization
-- Form validation and submission using [React Hook Form](https://react-hook-form.com/)
-- Toast notifications for user feedback using [React Toastify](https://github.com/fkhadra/react-toastify)
-
-## Getting Started
-
-To get started with the project, clone the repository and run the following commands:
-
-
-This will start the development server on port 3001. You can access the application in your browser at `http://localhost:3001`.
+This project is a front-end application for the eJam test. The application is built using [Next.js](https://nextjs.org/), a popular framework for building server-side rendered React applications, and other dependencies such as [React](https://reactjs.org/), [TailwindCSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/).
 
 ## Available Scripts
 
@@ -53,10 +39,6 @@ Here is a summary of the functionality of each package in the `package.json` fil
 - `react`: This is a popular JavaScript library for building user interfaces.
 
 - `react-dom`: This package provides the DOM-specific methods for React, allowing you to render components to the DOM.
-
-- `react-hook-form`: This is a library for managing form state in React, which provides hooks for handling form validation and submission.
-
-- `react-toastify`: This package provides a set of React components for creating notifications, often called "toasts".
 
 - `tailwindcss`: This is a utility-first CSS framework for quickly building custom designs.
 

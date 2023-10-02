@@ -3,24 +3,25 @@ import Image from "next/image";
 import Logo from "../../public/img/logo.png";
 import Macfee from "../../public/img/McAfee_Secure.png";
 import Norton from "../../public/img/norton-antivirus-logo 1.png";
+import { CheckBadgeIcon, HeartIcon, TruckIcon, ArrowPathIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
 const billboards = [
   {
     title: "30-DAY SATISFACTION GUARANTEE",
-    icon: "",
+    icon: <CheckBadgeIcon className="h-6 w-6 text-Base" />,
   },
   {
     title: "Free delivery on orders over $40.00",
-    icon: "",
+    icon: <HeartIcon className="h-6 w-6 text-Base" />,
   },
   {
     title: "50.000+ HAPPY CUSTOMERS",
-    icon: "",
+    icon: <TruckIcon className="h-6 w-6 text-Base" />,
   },
   {
     title: "100% Money Back Guarantee",
-    icon: "",
+    icon: <ArrowPathIcon className="h-6 w-6 text-Base" />,
   },
 ];
 
@@ -46,7 +47,8 @@ const Header = () => {
         <div className="h-14 w-full bg-DarkGrey md:py-10 md:px-28 px-5 py-10 flex flex-row justify-between items-center">
           {winSize.width >= 768 ? (
             billboards.map((item) => (
-              <span key={item.title} className="">
+              <span key={item.title} className="flex  gap-3">
+                {item.icon}
                 {item.title}
               </span>
             ))
@@ -56,16 +58,17 @@ const Header = () => {
                 onClick={prevSlide}
                 className="absolute left-0 p-4 outline-none"
               >
-                &#10094;
+                <ChevronLeftIcon className="h-5 w-5 text-Base font-bold " />
               </button>
-              <span className="w-full text-center">
+              <span className="w-full text-center flex items-center justify-center gap-2">
+                {billboards[currentIndex].icon}
                 {billboards[currentIndex].title}
               </span>
               <button
                 onClick={nextSlide}
                 className="absolute right-0 p-4 outline-none"
               >
-                &#10095;
+                <ChevronRightIcon className="h-5 w-5 text-Base font-bold" />
               </button>
             </div>
           )}

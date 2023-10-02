@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Box from "../../../../public/img/image-removebg-preview (12) 1.png";
+import { StarIcon } from "@heroicons/react/24/solid";
 
 const ProductDetailBlock = () => {
   return (
@@ -23,8 +24,14 @@ const ProductDetailBlock = () => {
             </div>
 
             <div>
-              <span></span>
-              <span className="text-Text text-sm">12 left in Stock</span>
+              <span className="my-2 flex items-center gap-1">
+                <StarIcon className="h-6 w-6 text-yellow-400" />
+                <StarIcon className="h-6 w-6 text-yellow-400" />
+                <StarIcon className="h-6 w-6 text-yellow-400" />
+                <StarIcon className="h-6 w-6 text-yellow-400" />
+                <StarIcon className="h-6 w-6 text-yellow-400" />
+              </span>
+              <span className="text-Text text-sm flex items-center gap-3 my-3"> <span className="h-2 w-2 bg-Blue rounded-full flex items-center ">.</span> 12 left in Stock</span>
             </div>
           </div>
         </section>
@@ -39,8 +46,10 @@ const ProductDetailBlock = () => {
             <li>Perfect for every room in all types of places.</li>
           </ul>
         </div>
-              <article className="w-full flex flex-row items-center gap-8 bg-SoftBlue rounded-lg p-5 mt-5">
-                  <span className="p-5 w-14 h-14 flex items-center justify-center bg-Blue rounded-full text-Base">%</span>
+        <article className="w-full flex flex-row items-center gap-8 bg-SoftBlue rounded-lg p-5 mt-5">
+          <span className="p-5 w-14 h-14 flex items-center justify-center bg-Blue rounded-full text-Base">
+            %
+          </span>
           <p className="text-Title text-xl ">
             Save <span className="text-Blue">53%</span> and get
             <span className="text-Blue"> 6 extra Clarifision</span> for only{" "}
